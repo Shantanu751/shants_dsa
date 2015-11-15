@@ -1,0 +1,10 @@
+I tried to make a internet shopping model.
+A similar service is provided by flipkart ebay and many other companies.
+Each buyer and seller has a username and pass.
+Admin overlooks everything like sellers, buyers and all other offers.
+Seller can offer products for a price.
+Seller can also manage price and available quantity of products he offers.
+Buyer can search for a product.
+He could search in different categories and brands and apply coupons.
+View and cancel previous transactions.
+Money transactions and networking was ignored.

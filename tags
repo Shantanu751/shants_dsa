@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+addcoupon	admin.c	/^void addcoupon(coupon *p) {$/;"	f
+addtype	admin.c	/^void addtype(int choice, type *p) {$/;"	f
+adduser	admin.c	/^void adduser(int choice, user *p) {$/;"	f
+admin	project.c	/^void admin() {	\/*Admin related activity*\/$/;"	f
+append	seller.c	/^void append(char *username) {$/;"	f
+appendbill	bill.c	/^int appendbill(bill *l, product *p, int quantity) {$/;"	f
+applycoupon	buyer.c	/^int applycoupon(bill *b, char *key) {$/;"	f
+bill	h.h	/^typedef struct bill{$/;"	s
+bill	h.h	/^}bill;$/;"	t	typeref:struct:bill
+brand	h.h	/^	char brand[16];$/;"	m	struct:product
+buyer	project.c	/^void buyer(char *username){	\/*Buyer related activity*\/$/;"	f
+cancelbill	buyer.c	/^int cancelbill(char *username, int pos, int pos2) {$/;"	f
+category	h.h	/^	char category[16];$/;"	m	struct:product
+changeprod	seller.c	/^void changeprod(char *username, int choice, int pos, int new) {$/;"	f
+compare	buyer.c	/^int compare(char *b, char *a) {$/;"	f
+coupon	h.h	/^	int quantity, coupon;$/;"	m	struct:bill
+coupon	h.h	/^typedef struct coupon{$/;"	s
+coupon	h.h	/^}coupon;$/;"	t	typeref:struct:coupon
+finalbill	bill.c	/^void finalbill(char *username, bill *b) {$/;"	f
+head	h.h	/^	product *head, *tail;$/;"	m	struct:bill
+initbill	bill.c	/^void initbill(bill *a) {$/;"	f
+key	h.h	/^	char key[16];$/;"	m	struct:coupon
+login	admin.c	/^int login(int choice, char *username, char *pass) {$/;"	f
+main	project.c	/^main() {$/;"	f
+min	h.h	/^	int min;$/;"	m	struct:coupon
+name	h.h	/^	char name[16];$/;"	m	struct:type
+name	h.h	/^	char name[32];$/;"	m	struct:product
+next	h.h	/^	struct product *next;$/;"	m	struct:product	typeref:struct:product::product
+off	h.h	/^	float off;$/;"	m	struct:coupon
+pass	h.h	/^	char username[32], pass[32];$/;"	m	struct:user
+price	h.h	/^	int price, quantity;$/;"	m	struct:product
+product	h.h	/^typedef struct product {$/;"	s
+product	h.h	/^}product;$/;"	t	typeref:struct:product
+quantity	h.h	/^	int price, quantity;$/;"	m	struct:product
+quantity	h.h	/^	int quantity, coupon;$/;"	m	struct:bill
+readbill	bill.c	/^void readbill(bill *l) {$/;"	f
+readcoupon	admin.c	/^void readcoupon() {$/;"	f
+readprod	seller.c	/^void readprod(char *username) {$/;"	f
+readtype	buyer.c	/^char *readtype(int choice, int pos) { $/;"	f
+readusers	admin.c	/^void readusers(int choice) {$/;"	f
+remov	seller.c	/^void remov(char *username, int pos) {$/;"	f
+removecoupon	admin.c	/^void removecoupon(int pos) {$/;"	f
+removprod	bill.c	/^product *removprod(bill *l, int pos) {$/;"	f
+removtype	admin.c	/^void removtype(int choice, int choice2) {$/;"	f
+removuser	admin.c	/^void removuser(int choice, int choice2) {$/;"	f
+searchpos	buyer.c	/^int searchpos(product *p) {$/;"	f
+searchprod	buyer.c	/^bill *searchprod(char *string, char *category, char *brand) {$/;"	f
+seller	h.h	/^	char seller[32];$/;"	m	struct:product
+seller	project.c	/^void seller(char *username) {	\/*Seller related activity*\/$/;"	f
+t	h.h	/^	time_t t;$/;"	m	struct:bill
+tail	h.h	/^	product *head, *tail;$/;"	m	struct:bill
+total	h.h	/^	double total;$/;"	m	struct:bill
+transaction	buyer.c	/^void transaction(char *username) {$/;"	f
+trashbill	bill.c	/^void trashbill(bill *l) {$/;"	f
+type	h.h	/^typedef struct type{$/;"	s
+type	h.h	/^}type;$/;"	t	typeref:struct:type
+user	h.h	/^typedef struct user{$/;"	s
+user	h.h	/^}user;$/;"	t	typeref:struct:user
+username	h.h	/^	char username[32], pass[32];$/;"	m	struct:user
+valid	h.h	/^	time_t valid;$/;"	m	struct:coupon

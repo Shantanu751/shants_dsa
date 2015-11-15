@@ -1,0 +1,12 @@
+project: admin.o bill.o buyer.o seller.o project.o	
+	cc *.c
+admin.o: admin.c fcntl.h string.h h.h
+	cc -Wall -c admin.c
+bill.o: bill.c fcntl.h string.h h.h
+	cc -Wall -c bill.c
+buyer.o: buyer.c fcntl.h string.h h.h
+	cc -Wall -c buyer.c
+seller.o: seller.c fcntl.h string.h h.h
+	cc -Wall -c seller.c
+project.o: project.c h.h
+	cc -Wall -c project.c
